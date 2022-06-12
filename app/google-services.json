@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "607555453585",
+    "project_id": "cstarplus-49772",
+    "storage_bucket": "cstarplus-49772.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607555453585:android:7e86abd75bba614959b530",
+        "android_client_info": {
+          "package_name": "atees.multivendor.dboy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607555453585-7bl56r020tqc99l4ohsnu1rid786i682.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3p0r2VYEFmPjiN3AbsvaUTEnyBiynE2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607555453585-7bl56r020tqc99l4ohsnu1rid786i682.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607555453585:android:794057cff00f7af359b530",
+        "android_client_info": {
+          "package_name": "com.badabazar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607555453585-7bl56r020tqc99l4ohsnu1rid786i682.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3p0r2VYEFmPjiN3AbsvaUTEnyBiynE2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607555453585-7bl56r020tqc99l4ohsnu1rid786i682.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607555453585:android:96cd875d7f5244b559b530",
+        "android_client_info": {
+          "package_name": "wrteam.multivendor.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607555453585-3tcnangek52o8j583cnfk7gvph94i613.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "wrteam.multivendor.shop",
+            "certificate_hash": "95ce0b236b16dac2cfeb0d7736c39c55c6f77336"
+          }
+        },
+        {
+          "client_id": "607555453585-7bl56r020tqc99l4ohsnu1rid786i682.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3p0r2VYEFmPjiN3AbsvaUTEnyBiynE2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607555453585-7bl56r020tqc99l4ohsnu1rid786i682.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

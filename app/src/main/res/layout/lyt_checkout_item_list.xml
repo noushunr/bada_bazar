@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_shadow"
+    android:padding="@dimen/dimen_10dp">
+
+    <TextView
+        android:id="@+id/tvDeliverable"
+        android:textAlignment="viewStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/msg_item_not_deliverable"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:textAlignment="viewStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDeliverable"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvQty"
+        android:textAlignment="viewStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvItemName" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvItemName"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_toEndOf="@id/tvQty"
+        android:textAlignment="viewStart" />
+
+
+    <TextView
+        android:id="@+id/tvTaxTitle"
+        android:textAlignment="viewStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPrice"
+        android:text="@string/tax" />
+
+    <TextView
+        android:id="@+id/tvTaxPercent"
+        android:textAlignment="viewStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPrice"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:layout_toEndOf="@id/tvTaxTitle" />
+
+
+    <TextView
+        android:id="@+id/tvTaxAmount"
+        android:textAlignment="viewStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPrice"
+        android:layout_toEndOf="@id/tvTaxPercent" />
+
+    <TextView
+        android:id="@+id/tvSubTotal"
+        android:textAlignment="viewStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPrice"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold" />
+
+</RelativeLayout>

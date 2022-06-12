@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lytMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_shadow"
+    android:padding="@dimen/_5sdp">
+
+
+    <TextView
+        android:id="@+id/txtDeliveryStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/logout"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDeliveryStatus"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/logout"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_below="@+id/tvStatus"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/app_name" />
+
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStatus"
+        android:textAlignment="viewStart"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_toStartOf="@id/imgRemove"
+        android:layout_toEndOf="@+id/imgProduct"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgRemove"
+        android:layout_width="@dimen/_17sdp"
+        android:layout_height="@dimen/_17sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_2sdp"
+        android:src="@drawable/ic_delete1"
+        app:tint="@color/gray"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:id="@+id/lytPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvProductName"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@+id/imgProduct"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textAlignment="viewStart"
+            android:id="@+id/tvMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:textAlignment="viewStart"
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textAlignment="viewStart"
+            android:id="@+id/tvOriginalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:paddingEnd="@dimen/dimen_5dp"
+            android:paddingStart="@dimen/dimen_5dp"
+            android:textSize="@dimen/_10ssp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytPrice"
+        android:layout_toEndOf="@+id/imgProduct"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qty_1"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnMinusQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="OnBtnClick"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_remove"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:text="@string/x"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:textColor="@color/black" />
+
+
+        <ImageButton
+            android:id="@+id/btnAddQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_add"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvQuantity"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="viewStart"
+        android:layout_margin="3dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+</RelativeLayout>
+
